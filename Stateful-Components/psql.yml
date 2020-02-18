@@ -6,14 +6,12 @@ services:
   db:
     image: postgres
     restart: always
-<<<<<<< HEAD
     ports:
       - 5432:5432
     environment:
       POSTGRES_USER: psql
-      POSTGRES_PASSWORD: '!abcd1234'
-    volumes:
-      - ./postgres-data:/var/lib/postgresql/data
+      POSTGRES_PASSWORD: !abcd1234
+
   adminer:
     image: adminer
     restart: always
